@@ -24,11 +24,14 @@ public class TestPoint {
         System.out.println();
 
         Point p = new Point(3, 4, 5);
+
+        p.setHoanhdo(1);
         System.out.println("HoanhDo: " + p.getHoanhdo());
-        p.getHoanhdo();
+
+        p.setTungdo(6);
         System.out.println("TungDo: " + p.getTungdo());
-        p.setTungdo(4);
+
+        p.setCaodo(7);
         System.out.println("CaoDo: " + p.getCaodo());
-        p.getCaodo();
     }
 }

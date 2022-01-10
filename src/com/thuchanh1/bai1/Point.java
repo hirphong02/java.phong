@@ -47,9 +47,8 @@ public class Point {
     }
 
     public double KhoangCach(Point x, Point y) {
-        double khoangcach = sqrt((x.hoanhdo - y.hoanhdo) * (x.hoanhdo - y.hoanhdo) + (x.tungdo - y.tungdo) * (x.tungdo - y.tungdo));
-        double a;
-        return khoangcach;
+        double kc = sqrt((x.hoanhdo - y.hoanhdo) * (x.hoanhdo - y.hoanhdo) + (x.tungdo - y.tungdo) * (x.tungdo - y.tungdo));
+        return kc;
     }
 
     // Get,set
