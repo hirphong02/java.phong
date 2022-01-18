@@ -1,12 +1,17 @@
-package com.thuchanh4;
+package com.thuchanh4.bai1;
 
-    public class Circle extends Shape {
+public class Circle extends Shape {
 
         private double r;
 
         public Circle(double r) {
             this.r = r;
         }
+
+         public Circle copy(Circle circle) {
+           this.r = circle.r ;
+           return circle;
+    }
 
         public Circle clone() {
             try {
@@ -39,7 +44,7 @@ package com.thuchanh4;
 
         @Override
         public String showInfo() {
-            return "Bán kính = " + this.r ;
+            return  "Hình tròn có bán kính = " + this.r ;
         }
 
         public double getR() {

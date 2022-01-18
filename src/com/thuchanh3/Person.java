@@ -9,9 +9,6 @@ public class Person {
     private int yearOfBirth;
     private String gender;
 
-    public Person(Person p) {
-    }
-
     public Person(String name, int yearOfBirth, Gender gender) {
 
         this.id = uniqueId++;
@@ -20,7 +17,12 @@ public class Person {
         this.gender = String.valueOf(gender);
     }
 
-
+    public Person(Person p) {
+        this.id = uniqueId++;
+        this.name = p.name;
+        this.yearOfBirth = p.yearOfBirth;
+        this.gender = p.gender;
+    }
 
     public int getId() {
         return id;

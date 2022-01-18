@@ -1,13 +1,19 @@
-package com.thuchanh4;
+package com.thuchanh4.bai1;
 
 public class Rectangular extends Shape {
 
     private double cd;
     private double cr;
 
-    public Rectangular(double cd, double cr) {
+    public Rectangular (double cd, double cr) {
         this.cd = cd;
         this.cr = cr;
+    }
+
+    public Rectangular copy(Rectangular rectangular) {
+        this.cd = rectangular.cd;
+        this.cr = rectangular.cr;
+        return rectangular;
     }
 
     public Rectangular clone() {

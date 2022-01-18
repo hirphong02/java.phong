@@ -3,6 +3,7 @@ package com.thuchanh3;
 import java.util.Date;
 
 public class Employee extends Person {
+
     private int id;
     private Date dateJoin;
     private String position;
@@ -10,7 +11,7 @@ public class Employee extends Person {
     private double basicSalary;
 
 
-    public Employee (Person p,Date dateJoin, String position, double salaryLevel, double basicSalary) {
+    public Employee (Person p, Date dateJoin, String position, double salaryLevel, double basicSalary) {
         super(p);
         this.id = p.getId();
         this.dateJoin = dateJoin;

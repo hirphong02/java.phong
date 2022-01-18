@@ -1,4 +1,4 @@
-package com.thuchanh4;
+package com.thuchanh4.bai1;
 
 public abstract class Shape {
 
@@ -11,4 +11,5 @@ public abstract class Shape {
     public abstract void getChild(int c);
 
     public abstract String showInfo();
+
 }

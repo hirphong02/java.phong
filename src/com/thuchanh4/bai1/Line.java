@@ -1,21 +1,28 @@
-package com.thuchanh4;
+package com.thuchanh4.bai1;
 
-    public class Point extends Shape {
+public class Line extends Shape {
+
 
         private double pointA;
         private double pointB;
 
-        public Point () {
+        public Line () {
         }
 
-        public Point (Double pointA, double pointB) {
+        public Line (Double pointA, double pointB) {
             this.pointA = pointA;
             this.pointB = pointB;
         }
 
-        public Point clone() {
+        public Line copy(Line line) {
+            this.pointA = line.pointA ;
+            this.pointB = line.pointB;
+            return line;
+        }
+
+        public Line clone() {
             try {
-                return (Point) super.clone();
+                return (Line) super.clone();
             } catch (CloneNotSupportedException e) {
                 e.printStackTrace();
             }
@@ -23,28 +30,28 @@ package com.thuchanh4;
         }
 
         @Override
-        public void operation(){
-            System.out.println("operation point");
+        public void operation() {
+            System.out.println("operration line");
         }
 
         @Override
         public void add(Shape e) {
-            System.out.println("add point");
+            System.out.println("add line");
         }
 
         @Override
         public void remove() {
-            System.out.println("remove point");
+            System.out.println("remove line");
         }
 
         @Override
         public void getChild(int c) {
-            System.out.println("getChild point");
+            System.out.println("getChild line");
         }
 
         @Override
         public String showInfo() {
-            return "Point: " + ", PointA = " + pointA + ",PointB" +pointB;
+            return  "Đoạn thẳng AB có điểm A = " + pointA + ", B = " + pointB;
         }
 
         public double getPointA() {
