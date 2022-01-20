@@ -86,7 +86,7 @@ public class PhanSo {
 
     public int getMau() {
         return mau;
-    }git
+    }
 
     public void setMau(int mau) {
         this.mau = mau;
